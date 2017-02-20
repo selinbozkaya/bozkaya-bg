@@ -1,10 +1,20 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: green;
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	background-color: red;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 8s;
 }
 
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+
+ }
 .nav {
 	width: 100%;
 	padding: 30px;
@@ -46,3 +56,4 @@ body {
 	font-size: 20px;
 	line-height: 28px;
 }
+
